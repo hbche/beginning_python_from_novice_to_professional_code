@@ -1,0 +1,2 @@
+# beginning_python_from_novice_to_professional_code
+The reading note of BeginningPythonFromNoviceToProfessional
