@@ -1,0 +1,30 @@
+# 将以数指定的年、月、日的日期打印出来
+months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
+
+# 一个列表其中包含1~31对应的结尾
+endings= ['st', 'nd', 'rd'] + 17 * ['th'] + ['st', 'nd', 'rd'] + 7 * ['th'] + ['st']
+
+year = input('Year: ')
+month = input('Month (1-12): ')
+day = input('Day (1-31): ')
+
+month_number = int(month)
+day_number = int(day)
+
+month_name = months[month_number - 1]
+day_name = day + endings[day_number - 1]
+
+print(month_name + ' ' + day_name + ', ' + year)
